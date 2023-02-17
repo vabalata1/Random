@@ -1,0 +1,121 @@
+if hookfunc or hookfunction then
+    h = hookfunc or hookfunction
+    function f()
+        ww = true
+    end
+
+    h(
+        string.byte,
+        function()
+            return f()
+        end
+    )
+
+    string.byte("sssh")
+
+    if ww ~= true then
+        game.Players.LocalPlayer.Kick(game.Players.LocalPlayer, "fuck off retard")
+        error("...")
+        game.Players.LocalPlayer:Kick("fuck off retard")
+        for i, v in next, game.CoreGui:GetChildren() do
+            v:Destroy()
+        end
+        rconsoleclear()
+        while task.wait() do
+            while task.wait() do
+                appendfile("i like fortnite.txt", "did i mention fortnite")
+            end
+        end
+    end
+end
+
+if hookfunc or hookfunction then
+    h = hookfunc or hookfunction
+    n = setclipboard or toclipboard or clipboard
+    h(
+        print,
+        function()
+            return false
+        end
+    )
+    h(
+        n,
+        function()
+            return false
+        end
+    )
+    h(
+        writefile,
+        function()
+            return false
+        end
+    )
+    h(
+        makefolder,
+        function()
+            return false
+        end
+    )
+    h(
+        rconsoleprint,
+        function()
+            return false
+        end
+    )
+    h(
+        warn,
+        function()
+            return false
+        end
+    )
+    h(
+        error,
+        function()
+            return false
+        end
+    )
+    h(
+        appendfile,
+        function()
+            return false
+        end
+    )
+    if clonefunction or clone_function then
+        rrr = clonefunction or clone_function
+        h(
+            rrr,
+            function()
+                return false
+            end
+        )
+    end
+    if debug.getupvalue or getupvalue then
+        xxf = debug.getupvalue or getupvalue
+        hookfunc(
+            xxf,
+            function()
+                return false
+            end
+        )
+    end
+    hookfunc(rconsolewarn,function()
+      return false
+    end
+end
+
+game.DescendantAdded:Connect(
+    function(v)
+        if v.IsA(v, "TextLabel") or v.IsA(v, "TextButton") or v.IsA(v, "TextBox") then
+            if string.match(string.lower(v.Text), ".gg/") or string.match(v.Text, "p5clQlrBUDE") then
+                v.Text = "no"
+                game.Players.LocalPlayer.Kick(game.Players.LocalPlayer, "fuck off retard")
+                error("...")
+                game.Players.LocalPlayer:Kick("fuck off retard")
+                for i, v in next, game.CoreGui:GetChildren() do
+                    v:Destroy()
+                end
+                rconsoleclear()
+            end
+        end
+    end
+)

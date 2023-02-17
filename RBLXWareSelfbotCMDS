@@ -1,0 +1,8 @@
+>>chatGPT text ||| sends a request to chatGPT, an advanced chatbot
+>>taunt tauntName ||| makes the bot to play a taunt of your choice
+>>tp name ||| makes the bot teleport to a player of your choice
+>>reset ||| resets the character
+>>mods ||| tells you if someone with moderator rank or higher is in the server
+>>plrInfo name ||| tells you what equipment the player has (weapon, taunt effect, victory theme and particles
+>>price itemName ||| tells you the item cost
+>>nolimbs ||| makes the bot lose limbs
